@@ -1,0 +1,266 @@
+.emergency-panel {
+  background: linear-gradient(135deg, #fff5f5 0%, #fed7d7 100%);
+  border: 2px solid #e53e3e;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  animation: slideIn 0.3s ease-out;
+  box-shadow: 0 8px 32px rgba(229, 62, 62, 0.2);
+}
+
+.emergency-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(229, 62, 62, 0.2);
+}
+
+.emergency-header h3 {
+  color: #e53e3e;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #e53e3e;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.close-btn:hover {
+  background: rgba(229, 62, 62, 0.1);
+}
+
+.emergency-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.emergency-alert {
+  background: rgba(229, 62, 62, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 4px solid #e53e3e;
+}
+
+.emergency-alert p {
+  margin: 0;
+  color: #2d3748;
+  line-height: 1.6;
+}
+
+.helpline-section h4,
+.websites-section h4 {
+  color: #2d3748;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 15px 0;
+}
+
+.helpline-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.helpline-card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.helpline-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.helpline-card.primary {
+  border-left: 4px solid #667eea;
+}
+
+.helpline-card.secondary {
+  border-left: 4px solid #48bb78;
+}
+
+.helpline-card.emergency {
+  border-left: 4px solid #e53e3e;
+}
+
+.helpline-info {
+  flex: 1;
+}
+
+.helpline-info h5 {
+  margin: 0 0 5px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.helpline-number {
+  font-size: 18px;
+  font-weight: 700;
+  color: #667eea;
+  margin-bottom: 5px;
+}
+
+.helpline-info p {
+  margin: 0;
+  font-size: 12px;
+  color: #718096;
+}
+
+.helpline-action {
+  flex-shrink: 0;
+}
+
+.call-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 12px;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.call-btn.primary {
+  background: #667eea;
+  color: white;
+}
+
+.call-btn.primary:hover {
+  background: #5a67d8;
+  transform: scale(1.05);
+}
+
+.call-btn.secondary {
+  background: #48bb78;
+  color: white;
+}
+
+.call-btn.secondary:hover {
+  background: #38a169;
+  transform: scale(1.05);
+}
+
+.call-btn.emergency {
+  background: #e53e3e;
+  color: white;
+}
+
+.call-btn.emergency:hover {
+  background: #c53030;
+  transform: scale(1.05);
+}
+
+.website-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.website-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.website-link:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.website-info h5 {
+  margin: 0 0 3px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.website-info p {
+  margin: 0;
+  font-size: 12px;
+  color: #718096;
+}
+
+.external-link {
+  color: #667eea;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.emergency-footer {
+  background: rgba(102, 126, 234, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 4px solid #667eea;
+}
+
+.emergency-footer p {
+  margin: 0;
+  color: #2d3748;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .emergency-panel {
+    padding: 15px;
+    margin: 10px;
+  }
+  
+  .helpline-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .helpline-action {
+    align-self: stretch;
+  }
+  
+  .call-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
