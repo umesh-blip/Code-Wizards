@@ -84,34 +84,6 @@ npm run build
 
 ## 🌐 Deployment on Render
 
-### Step 1: Prepare Your Repository
-1. Push your code to a GitHub repository
-2. Ensure your repository is public or connected to Render
-
-### Step 2: Deploy on Render
-1. Go to [Render Dashboard](https://dashboard.render.com)
-2. Click "New +" and select "Static Site"
-3. Connect your GitHub repository
-4. Configure the build settings:
-   - **Build Command**: `npm run build`
-   - **Publish Directory**: `build`
-   - **Environment**: Node.js
-
-### Step 3: Environment Variables (Optional)
-No environment variables are required for basic functionality.
-
-### Step 4: Deploy
-Click "Create Static Site" and wait for the deployment to complete.
-
-## 🛠️ Technology Stack
-
-- **Frontend**: React 18
-- **AI Integration**: Google Gemini API for intelligent responses
-- **Styling**: CSS3 with custom animations
-- **Icons**: Lucide React
-- **Animations**: CSS animations and transitions
-- **Deployment**: Render (Static Site)
-
 ## 📱 Features in Detail
 
 ### Stress Detection Algorithm
