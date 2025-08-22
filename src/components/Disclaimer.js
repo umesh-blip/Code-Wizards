@@ -34,16 +34,7 @@ const Disclaimer = ({ onClose }) => {
             </ul>
           </div>
           
-          <div className="disclaimer-section">
-            <h3>❌ What WizCare Cannot Do</h3>
-            <ul>
-              <li>Provide medical diagnosis or treatment</li>
-              <li>Replace professional therapy or counseling</li>
-              <li>Handle emergency situations</li>
-              <li>Give specific medical advice</li>
-              <li>Prescribe medications</li>
-            </ul>
-          </div>
+
           
           <div className="disclaimer-section warning">
             <h3>🔔 Important Reminders</h3>

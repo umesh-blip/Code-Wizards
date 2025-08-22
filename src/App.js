@@ -20,27 +20,46 @@ function App() {
     greeting: [
       "Hi there! I'm WizCare, your mental health companion. How are you feeling today? 💙",
       "Hello! I'm here to listen and support you. What's on your mind? 🌸",
-      "Welcome! I'm WizCare, ready to chat whenever you need someone to talk to. 💜"
+      "Welcome! I'm WizCare, ready to chat whenever you need someone to talk to. 💜",
+      "Hey there! I'm your AI companion here to support your mental wellness journey. How's your day going? 🌟",
+      "Hi! I'm WizCare, and I'm here to listen without judgment. What would you like to share? 💙",
+      "Welcome to WizCare! I'm ready to be your supportive companion today. How are you feeling? 💜"
     ],
     stress: [
       "I hear you, that sounds really tough. 💙",
       "Stress can be overwhelming, but you're not alone in this.",
-      "It's okay to feel this way. Want to talk more about what's stressing you?"
+      "It's okay to feel this way. Want to talk more about what's stressing you?",
+      "I understand that stress can feel heavy sometimes. Would you like to talk about what's been on your mind? 🌟",
+      "It's completely normal to feel stressed, and it's brave of you to reach out. What's been troubling you? 💙",
+      "Stress affects us all differently, and it's okay to not be okay. I'm here to listen to whatever you want to share. 🌸",
+      "Sometimes just talking about what's stressing us can help lighten the load. What's been on your mind? 💜"
     ],
     anxiety: [
       "Anxiety can feel really scary, but you're doing great by reaching out.",
       "I understand how challenging anxiety can be. You're not alone.",
-      "That must be really difficult. I'm here to listen and support you."
+      "That must be really difficult. I'm here to listen and support you.",
+      "Anxiety can be overwhelming, but you're taking a great step by talking about it. 💙",
+      "I hear how anxiety can make everything feel uncertain. You're not alone in this struggle. 🌸",
+      "It's brave of you to share your anxiety with me. What's been making you feel anxious lately? 💜",
+      "Anxiety can feel like a heavy weight, but you don't have to carry it alone. I'm here to listen. 🌟"
     ],
     burnout: [
       "Burnout is real and it's okay to feel exhausted. You deserve rest.",
       "I can see you've been through a lot. It's okay to take a step back.",
-      "You've been pushing yourself hard. Remember, it's okay to slow down."
+      "You've been pushing yourself hard. Remember, it's okay to slow down.",
+      "Burnout can make you feel like you're running on empty. You deserve to take care of yourself. 💙",
+      "It sounds like you've been giving so much of yourself. It's time to give yourself permission to rest. 🌸",
+      "You've been working so hard, and it's completely understandable to feel burned out. What would help you feel better? 💜",
+      "Burnout is your body and mind telling you to slow down. You don't have to keep pushing through. 🌟"
     ],
     crisis: [
       "I'm really concerned about what you're sharing. You're not alone, and there are people who can help right now.",
       "This sounds really serious. Please know that help is available 24/7.",
-      "I want you to be safe. There are professionals ready to support you immediately."
+      "I want you to be safe. There are professionals ready to support you immediately.",
+      "I'm deeply worried about what you're going through. Your life has value, and there are people who want to help you.",
+      "What you're experiencing sounds like a crisis, and I want you to know that professional help is available right now.",
+      "I can hear how much pain you're in, and I want you to know that you don't have to face this alone. Help is here.",
+      "Your feelings are valid, and what you're going through is serious. Please reach out to a crisis helpline right now."
     ]
   };
 
@@ -56,13 +75,13 @@ function App() {
     }
 
     // High stress keywords
-    const highStressKeywords = ['overwhelmed', 'can\'t take it', 'hopeless', 'worthless', 'alone', 'nobody cares'];
+    const highStressKeywords = ['overwhelmed', 'can\'t take it', 'hopeless', 'worthless', 'alone', 'nobody cares', 'cry', 'crying', 'sad', 'depressed', 'miserable', 'terrible', 'awful', 'hate', 'desperate'];
     if (highStressKeywords.some(keyword => lowerText.includes(keyword))) {
       level = Math.max(level, 3);
     }
 
     // Medium stress keywords
-    const mediumStressKeywords = ['stressed', 'anxious', 'worried', 'tired', 'exhausted', 'burnout'];
+    const mediumStressKeywords = ['stressed', 'anxious', 'worried', 'tired', 'exhausted', 'burnout', 'upset', 'frustrated', 'annoyed', 'angry', 'mad', 'confused', 'lost'];
     if (mediumStressKeywords.some(keyword => lowerText.includes(keyword))) {
       level = Math.max(level, 2);
     }
